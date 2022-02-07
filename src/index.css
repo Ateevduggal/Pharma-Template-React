@@ -1,13 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+}
+#item-1 {
+  background-image: url(./Images/Developing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  background-blend-mode: darken;
+  background-color: rgba(5, 18, 34, 0.699);
+  color: white;
+}
+#item-2 {
+  background-image: url(./Images/Working.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  background-blend-mode: darken;
+  background-color: rgba(5, 18, 34, 0.685);
+  color: white;
+}
+.btn:hover {
+  border: 2px solid rgb(53, 65, 6) !important;
+  color: rgb(53, 65, 6) !important;
+  background-color: transparent;
+}
+.btn {
+  background-color: rgb(53, 65, 6);
+}
+/*              About Section                  */
+
+#about {
+  background-color: rgb(1, 9, 19);
+  color: white;
+}
+#text_about {
+  padding: 0 16.2%;
+  opacity: 0.7;
+  font-family: "Oswald", sans-serif;
+}
+.card {
+  border: 1px solid white;
+  cursor: pointer;
+}
+.card-text {
+  opacity: 0.7;
+  font-family: "Oswald", sans-serif;
+  word-spacing: 1px;
+}
+#icon {
+  font-size: 70px;
+  margin-top: 10%;
+  color: rgb(143, 175, 14);
+}
+/*                  Product Section                */
+
+#product {
+  background-image: url(./Images/tablets.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  background-blend-mode: darken;
+  background-color: rgba(5, 18, 34, 0.685);
+  color: white;
+  padding: 0 4%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*              Why Choose Us Section                 */
+
+#why {
+  background-color: rgb(1, 9, 19);
+  color: white;
+  padding: 0 4%;
+}
+#btn-1 {
+  display: none;
+}
+.ic {
+  font-size: 3.3rem;
+}
+
+/*              Count Section                */
+
+#count {
+  background-image: linear-gradient(90deg, rgb(143, 175, 14), rgb(21, 79, 150));
+}
+
+/*                  Blog Section              */
+
+#blog {
+  background-image: url(./Images/tablet.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  background-blend-mode: darken;
+  background-color: rgba(5, 34, 19, 0.685);
+  background-position: center;
+}
+#blog_1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(5, 22, 43, 0.719);
+  background-blend-mode: darken;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 1.2%;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+#blog_1:hover {
+  background-color: rgba(53, 65, 6, 0.527);
+}
+.blog_1:hover {
+  color: rgb(185, 221, 42) !important;
+}
+/*                  RESPONSIVE                        */
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .carousel-item h2 {
+    font-size: 26px !important;
+    padding: 0 3% !important;
+  }
+  .carousel-item p {
+    font-size: 19px !important;
+    padding: 0 10% !important;
+  }
+  #text_about {
+    padding: 0 2.8% !important;
+  }
+  #card {
+    display: block !important;
+  }
+  .card {
+    width: 100% !important;
+    margin: 2% 0 !important;
+  }
+  #text_product {
+    width: 100% !important;
+  }
+  #img_product {
+    display: none !important;
+  }
+  .btn {
+    width: 50% !important;
+    font-size: 1rem !important;
+  }
+  #btn {
+    display: none !important;
+  }
+  #btn-1 {
+    display: block;
+  }
+  .heading {
+    width: 100%;
+    text-align: center;
+    padding: 0 !important;
+  }
+  #card_why {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .card_why {
+    padding: 0 !important;
+    width: 45% !important;
+    display: block !important;
+    text-align: center;
+    margin: 2% !important;
+  }
+  .ic {
+    padding: 3% 0 !important;
+  }
+  #card_count {
+    display: grid !important;
+    grid-template-columns: auto auto !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .count {
+    font-size: 1.2rem !important;
+    margin: 5% 0 !important;
+  }
+  .count:last-child {
+    width: 100% !important;
+    margin: 0 55% !important;
+  }
+  .card-blog {
+    width: 100% !important;
+    padding: 0 6% !important;
+    margin: 4% 0 !important;
+    height: 300px !important;
+  }
+  .copyright {
+    font-size: 15px !important;
+    padding: 2% 0 !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .carousel-item h2 {
+    font-size: 26px !important;
+    padding: 0 3% !important;
+  }
+  .carousel-item p {
+    font-size: 19px !important;
+    padding: 0 10% !important;
+  }
+  #text_about {
+    padding: 0 2.8% !important;
+  }
+  #card {
+    display: grid !important;
+    grid-template-columns: auto auto !important;
+    justify-content: center !important;
+  }
+  .card {
+    width: 90% !important;
+    margin: 0 4.5% !important;
+  }
+  .card:last-child {
+    margin: 5% 55% !important;
+    width: 100% !important;
+  }
+  #text_product {
+    width: 100% !important;
+  }
+  #img_product {
+    display: none !important;
+  }
+  .btn {
+    width: 70% !important;
+    font-size: 1rem !important;
+  }
+  #btn {
+    display: none !important;
+  }
+  #btn-1 {
+    display: block;
+  }
+  .heading {
+    width: 100%;
+    text-align: center;
+    padding: 0 !important;
+  }
+  #card_why {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .card_why {
+    padding: 0 !important;
+    width: 45% !important;
+    display: block !important;
+    text-align: center;
+    margin: 2% !important;
+  }
+  .ic {
+    padding: 3% 0 !important;
+  }
+  #card_count {
+    display: grid !important;
+    grid-template-columns: auto auto auto !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .count {
+    font-size: 1.2rem !important;
+    margin: 5% 0 !important;
+  }
+  .count:nth-child(4) {
+    width: 100% !important;
+    margin: 3% 65% !important;
+  }
+  .count:last-child {
+    width: 100% !important;
+    margin: 0 55% !important;
+  }
+  .card-blog {
+    width: 90% !important;
+    padding: 0 4% !important;
+    margin: 4% !important;
+    height: 300px !important;
+  }
+  .card-blog:last-child {
+    width: 100% !important;
+    margin: 0 55% !important;
+  }
+  .copyright {
+    font-size: 15px !important;
+    padding: 2% 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  #img_product {
+    margin: 10% 0 !important;
+  }
+  #btn {
+    display: none !important;
+  }
+  #btn-1 {
+    display: block;
+  }
+  .heading {
+    width: 100%;
+    text-align: center;
+    padding: 0 !important;
+  }
+  #card_why {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .card_why {
+    padding: 0 !important;
+    width: 45% !important;
+    display: block !important;
+    text-align: center;
+    margin: 2% !important;
+  }
+  .ic {
+    padding: 3% 0 !important;
+  }
+  .count {
+    font-size: 1.2rem !important;
+  }
 }
