@@ -17,7 +17,7 @@ const App = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 bg-dark fs-4 fw-bold text-center py-4 text-white copyright">
-            Copyright &copy; Tekolio 2022
+            Copyright &copy; Pharma+ 2022
           </div>
         </div>
       </div>
